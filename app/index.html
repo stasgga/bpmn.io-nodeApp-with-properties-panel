@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>bpmn-js modeler</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/diagram-js.css" />
+    <link rel="stylesheet" href="vendor/bpmn-font/css/bpmn-embedded.css" />
+    <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+    <div class="content with-diagram" id="js-drop-zone">
+
+        <div class="message intro">
+            <div class="note">
+                Arrastre un diagrama BPMN desde una carpeta o<a id="js-create-diagram" href> cree un nuevo diagrama</a> para comenzar.
+            </div>
+        </div>
+
+        <div class="message error">
+            <div class="note">
+                <p>Error, we could not display the BPMN 2.0 diagram.</p>
+
+                <div class="details">
+                    <span>Import Error Details</span>
+                    <pre></pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="canvas" id="js-canvas"></div>
+        <div class="properties-panel-title closed" id="js-properties-title">Properties</div>
+        <div class="properties-panel-parent" id="js-properties-panel"></div>
+    </div>
+
+  <ul class="buttons">
+      <li>
+          <a id="js-download-diagram" href title="Guardar Diagrama BPMN">
+              Guardar Diagrama BPMN
+          </a>
+      </li>
+      <!--
+    <li>
+      <a id="js-download-svg" href title="Descargar una imagen SVG">
+        SVG image
+      </a>
+    </li>
+         -->
+  </ul>
+    
+  <script src="index.js"></script>
+    </body>
+</html>
